@@ -43,7 +43,7 @@ const Bloglist = () => {
       </div>
       <div className="flex flex-wrap justify-center gap-10 gap-y-10 mb-16 xl:mb-24 p-5 ">
         {blog_data
-          .filter((item) => (Menu === "All" ? true : item.category === Menu))
+          .filter(item=> Menu === "All" ? true : item.category === Menu)
           .map((item, idx) => (
             <BlogItem
               key={idx}
